@@ -37,8 +37,8 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
-        form,
+        "http://localhost:4000/api/auth/register",
+        form
       );
 
       console.log("Registration successful:", response.data);
@@ -161,3 +161,4 @@ const Register = () => {
 };
 
 export default Register;
+
